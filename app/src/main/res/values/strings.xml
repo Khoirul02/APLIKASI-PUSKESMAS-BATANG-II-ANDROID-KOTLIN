@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Puskesmas Batang II</string>
+    <string name="btn_login">btn_login</string>
+    <string name="login_app">login_app</string>
+    <string name="registrasi_user">registrasi_user</string>
+    <string name="btn_register">btn_register</string>
+    <string name="id_user">id_user</string>
+    <string name="registrasi_pasien">registrasi_pasien</string>
+    <string name="password">Tanggal Lahir (1999–02-09) </string>
+    <string name="no_kk">No Kartu Keluarga</string>
+    <string name="no_kai">no ktp/kai</string>
+    <string name="no_bpjs">no bpjs</string>
+    <string name="konfirmasi_password">konfirmasi_password</string>
+    <string name="nama_pasien">Nama Pasien</string>
+    <string name="username">Nomor Handphone</string>
+    <string name="nomor_antrian_anda">Nomor Antrian Anda</string>
+    <string name="pilih_daftar_poli">Pilih Daftar Poli</string>
+    <string name="Poli_anak">Poli Kesehatan Anak</string>
+    <string name="Poli_ibu">Poli Kesehatan Ibu</string>
+    <string name="poli_gigi_mulut"><![CDATA[Poli Gigi & Mulut]]></string>
+    <string name="poli_p2p">Poli Paru-paru</string>
+    <string name="poli_dis"><![CDATA[Poli Disabilitas & Lansia]]></string>
+    <string name="poli_umum">Poli Umum</string>
+    <string name="poli_anak">Poli Anak</string>
+    <string name="poli_ibu">Poli Ibu</string>
+    <string name="ambil_no_antrian">Ambil No Antrian</string>
+    <string-array name="daftar_poli">
+        <item>Poli Mata</item>
+        <item>Poli Telinga</item>
+        <item>Poli Penyakit Dalam</item>
+        <item>Poli Penyakit Luar</item>
+        <item>Poli </item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

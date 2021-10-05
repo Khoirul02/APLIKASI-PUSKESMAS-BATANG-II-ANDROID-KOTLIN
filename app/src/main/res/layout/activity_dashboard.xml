@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg1"
+    tools:context=".dashboard.DashboardActivity">
+
+    <ImageView
+        android:id="@+id/bg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@android:string/ok"
+        app:srcCompat="@drawable/bg"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/pilih_daftar_poli"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="36sp"
+        android:gravity="center_horizontal" />
+
+    <LinearLayout
+        android:id="@+id/ll_lihat_dokter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="300dp"
+        android:orientation="vertical">
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_gravity="center"
+            android:contentDescription="@string/poli_umum"
+            app:srcCompat="@drawable/dc" />
+
+        <TextView
+            android:id="@+id/tvLihatDokter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lihat Dokter"
+            android:layout_gravity="center"
+            android:textColor="#0E0E0E"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_lihat_poli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginLeft="172dp"
+        android:layout_marginTop="300dp"
+        android:orientation="vertical">
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/shape"
+        android:contentDescription="@string/Poli_anak"
+        app:srcCompat="@drawable/kd" />
+
+
+    <TextView
+        android:id="@+id/tvLihatPoli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lihat Poli"
+        android:textColor="#0E0E0E"
+        android:textSize="15sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_lihat_antrian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="315dp"
+        android:layout_marginLeft="315dp"
+        android:layout_marginTop="300dp"
+        android:orientation="vertical">
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:contentDescription="@string/poli_umum"
+        app:srcCompat="@drawable/md" />
+
+    <TextView
+        android:id="@+id/tvAntrian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Antrian"
+        android:textColor="#0E0E0E"
+        android:textSize="15sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAmbilAntrian"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:text="@string/ambil_no_antrian"
+        android:textColor="@color/colorAccent" />
+
+</RelativeLayout>

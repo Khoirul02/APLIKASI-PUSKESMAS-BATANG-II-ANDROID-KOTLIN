@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="4dp"
+    card_view:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/iv_foto_list_poli"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="4dp"
+            android:scaleType="centerCrop"
+            tools:ignore="ContentDescription"
+            android:src="@drawable/dinkes" />
+
+        <TextView
+            android:id="@+id/tv_list_poli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@id/iv_foto_list_poli"
+            android:layout_toRightOf="@id/iv_foto_list_poli"
+            android:textColor="#fc035a"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="Poli Kebidanan" />
+
+        <TextView
+            android:id="@+id/tv_list_tanggal_pasien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_list_poli"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_toEndOf="@id/iv_foto_list_poli"
+            android:maxLines="3"
+            android:textColor="#4A9586"
+            tools:ignore="RtlCompat"
+            tools:text="Khoirul Huda" />
+
+        <TextView
+            android:id="@+id/tv_list_no_antrian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_list_tanggal_pasien"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/iv_foto_list_poli"
+            android:maxLines="3"
+            android:textColor="#4A9586"
+            tools:ignore="RtlCompat"
+            tools:text="No Antrian Ke - 1" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
