@@ -28,7 +28,7 @@ class AntrianAdapter (val result  : ArrayList<DataAntrianItem>) : RecyclerView.A
         val df: DateFormat = SimpleDateFormat("yyyy-MM-dd")
         val tglAntrian: String = dateFormat.format(df.parse(dateRegistrasiAntrian))
         holder.nameTanggalList.text = "Periksa $tglAntrian"
-        holder.noAntrianList.text = "No Antrian Ke - ${data.noAntrian}"
+        holder.noAntrianList.text = "No Antrian - ${data.noAntrian}"
     }
 
     override fun getItemCount(): Int {

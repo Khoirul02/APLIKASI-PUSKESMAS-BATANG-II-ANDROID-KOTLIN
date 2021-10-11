@@ -19,6 +19,7 @@ interface Api {
         @Field("nama_pasien") nama_pasien:String,
         @Field("no_kk") no_kk:String,
         @Field("nik") nik:String,
+        @Field("kepala_klrg") kepala_klrg:String,
         @Field("nohp") nohp:String,
         @Field("tgl_lahir") tgl_lahir:String,
         @Field("jenkel") jenkel: String,

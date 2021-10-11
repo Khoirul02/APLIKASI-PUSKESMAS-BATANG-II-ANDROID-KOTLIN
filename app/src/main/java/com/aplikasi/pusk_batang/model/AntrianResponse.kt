@@ -20,14 +20,23 @@ data class AntrianResponse(
 @Parcelize
 data class DataAntrianItem(
 
-	@field:SerializedName("nik")
-	val nik: String? = null,
-
 	@field:SerializedName("id_poli")
 	val idPoli: String? = null,
 
-	@field:SerializedName("nama_pasien")
-	val nama_pasien: String? = null,
+	@field:SerializedName("kode_poli")
+	val kodePoli: String? = null,
+
+	@field:SerializedName("tgl_lahir")
+	val tglLahir: String? = null,
+
+	@field:SerializedName("alamat")
+	val alamat: String? = null,
+
+	@field:SerializedName("nik")
+	val nik: String? = null,
+
+	@field:SerializedName("kepala_klrg")
+	val kepalaKlrg: String? = null,
 
 	@field:SerializedName("nama")
 	val nama: String? = null,
@@ -44,9 +53,6 @@ data class DataAntrianItem(
 	@field:SerializedName("jenkel")
 	val jenkel: String? = null,
 
-	@field:SerializedName("create_at")
-	val createAt: String? = null,
-
 	@field:SerializedName("create_at_antrian")
 	val createAtAntrian: String? = null,
 
@@ -56,9 +62,6 @@ data class DataAntrianItem(
 	@field:SerializedName("no_antrian")
 	val noAntrian: String? = null,
 
-	@field:SerializedName("tgl_lahir")
-	val tglLahir: String? = null,
-
-	@field:SerializedName("alamat")
-	val alamat: String? = null
+	@field:SerializedName("status")
+	val status: String? = null
 ) : Parcelable

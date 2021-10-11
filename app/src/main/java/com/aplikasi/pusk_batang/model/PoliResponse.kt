@@ -26,6 +26,9 @@ data class DataPoliItem(
 	@field:SerializedName("id")
 	val id: String? = null,
 
+	@field:SerializedName("kode_poli")
+	val kode_poli: String? = null,
+
 	@field:SerializedName("create_at")
 	val createAt: String? = null
 ) : Parcelable

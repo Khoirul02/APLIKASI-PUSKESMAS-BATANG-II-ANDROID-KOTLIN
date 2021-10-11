@@ -48,9 +48,10 @@ class MainActivity : AppCompatActivity() {
                                 for (item in data!!) {
                                     val editor: SharedPreferences.Editor? = sharedPreferences.edit()
                                     editor!!.putString("ID", item!!.id)
-                                    editor.putString("NAMA", item.nama_pasien)
+                                    editor.putString("NAMA", item.namaPasien)
                                     editor.putString("NO_KK", item.noKk)
                                     editor.putString("NIK", item.nik)
+                                    editor.putString("KEPALA", item.kepalaKlrg)
                                     editor.putString("NOHP", item.nohp)
                                     editor.putString("TGL_LAHIR", item.tglLahir)
                                     editor.putString("JENKEL", item.jenkel)

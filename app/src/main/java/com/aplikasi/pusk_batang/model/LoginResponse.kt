@@ -23,8 +23,11 @@ data class DataItem(
 	@field:SerializedName("nik")
 	val nik: String? = null,
 
+	@field:SerializedName("kepala_klrg")
+	val kepalaKlrg: String? = null,
+
 	@field:SerializedName("nama_pasien")
-	val nama_pasien: String? = null,
+	val namaPasien: String? = null,
 
 	@field:SerializedName("nohp")
 	val nohp: String? = null,

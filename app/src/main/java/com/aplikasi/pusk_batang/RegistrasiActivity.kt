@@ -48,7 +48,7 @@ class RegistrasiActivity : AppCompatActivity(), AdapterView.OnItemSelectedListen
         }
         btnRegister.setOnClickListener {
             RetrofitClient.instance.daftarPasien(txtNamaPasien.text.toString().trim(),txtKKPasien.text.toString().trim(),
-                txtNIKPAsien.text.toString().trim(),txtNoHP.text.toString().trim(),tv_tanggal_lahir_pengguna.text.toString().trim(),
+                txtNIKPAsien.text.toString().trim(),txtKepalaPasien.text.toString().trim(),txtNoHP.text.toString().trim(),tv_tanggal_lahir_pengguna.text.toString().trim(),
             spn_jk_pengguna.selectedItem.toString().trim(),txtAlamat.text.toString().trim(),"insert_pasien")
                 .enqueue(object : Callback<DefaultResponse> {
                     override fun onResponse(
@@ -60,6 +60,7 @@ class RegistrasiActivity : AppCompatActivity(), AdapterView.OnItemSelectedListen
                             txtNamaPasien.setText("")
                             txtNIKPAsien.setText("")
                             txtNoHP.setText("")
+                            txtKepalaPasien.setText("")
                             txtAlamat.setText("")
                             Toast.makeText(this@RegistrasiActivity, "Berhasil Mendaftar", Toast.LENGTH_SHORT)
                                 .show()
